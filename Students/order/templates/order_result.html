@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат заказа</title>
+</head>
+<body>
+
+    <h1>Заказ успешно оформлен!</h1>
+
+    <p>Имя: {{ order.name }}</p>
+    <p>Телефон: {{ order.phone }}</p>
+    <p>Товар: {{ order.get_product_display }}</p>
+    <p>Количество: {{ order.quantity }}</p>
+    <p>Доставка: {{ order.get_delivery_display }}</p>
+    <p>Адрес: {{ order.address }}</p>
+
+    <h3>Итого: {{ order.total_price }} сум</h3>
+
+    <a href="/">Вернуться в магазин</a>
+
+</body>
+</html>
