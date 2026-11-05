@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Результат</h1>
+
+<p>Первое число: {{ data.first_number }}</p>
+<p>Второе число: {{ data.second_number }}</p>
+<p>Операция: {{ data.operation }}</p>
+<p><strong>Результат: {{ data.result }}</strong></p>
+
+<a href="{% url 'calculator' %}">Вернуться к калькулятору</a>
+</body>
+</html>
